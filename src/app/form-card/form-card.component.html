@@ -1,1 +1,8 @@
-<p>form-card works!</p>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{note.title}}</h5>
+        <textarea name="card-text" placeholder={{note.content}}></textarea>
+        <button type="submit" class="btn btn-primary"> (click)="onDelete($event, {{note.id}})">Delete</button>
+    </div>
+    <div class="card-footer text-muted">{{note.createdate}}</div>
+</div>
