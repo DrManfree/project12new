@@ -3,7 +3,7 @@
         <h6 class="card-id text-muted" #noteId>{{note.id}}</h6>
         <h5 class="card-title">{{note.title}}</h5>
         <div class="col-12">
-        <textarea class="card-text" readonly="true" placeholder={{note.content}} #noteText></textarea>
+        <textarea class="card-text" readonly="true" #noteText>{{ note.content }}</textarea>
         </div>
         <button type="button" class="btn btn-primary" (click)="onDelete($event)">Delete</button>
         <button type="button" class="btn btn-info" (click)="onEdit(noteText, applyEdit)">Edit</button>
